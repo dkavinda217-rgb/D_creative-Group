@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap');
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ff0000;
+}
+
+/* Base Styles */
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+/* Neon Text Utilities */
+.text-neon-red {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.text-neon-yellow {
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.7), 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+/* Gradient Text */
+.gradient-text-red {
+    background: linear-gradient(to right, #ff0000, #ff4d4d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Hover Effects */
+.service-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px -15px rgba(255, 0, 0, 0.15);
+}
+
+/* Nav Link Hover Animation */
+.dark-nav-link {
+    position: relative;
+    padding-bottom: 2px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.dark-nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff0000;
+    transition: width 0.3s ease;
+}
+
+.dark-nav-link:hover::after {
+    width: 100%;
+}
+
+/* Image Blend Modes */
+.blend-mode-overlay {
+    mix-blend-mode: normal; /* Adjusted for better visibility */
+}
+
+/* Mobile Menu Transition */
+#mobile-menu {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}

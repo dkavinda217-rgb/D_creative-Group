@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | D_Creative Group</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#FF0000',
+                            yellow: '#FFFF00',
+                            dark: '#0a0a0a',
+                            gray: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        display: ['Syncopate', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-brand-dark text-white font-sans overflow-x-hidden">
+
+    <!-- Navbar (Consistent) -->
+    <nav
+        class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-brand-dark/80 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-2 group">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-br from-brand-red to-brand-yellow rounded-full flex items-center justify-center font-display font-bold text-black text-xl group-hover:scale-110 transition-transform">
+                            D</div>
+                        <span class="font-display font-bold text-xl tracking-wider text-white">Creative<span
+                                class="text-brand-red">.</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="dark-nav-link hover:text-brand-red transition-colors duration-300">Home</a>
+                        <a href="about.html"
+                            class="dark-nav-link hover:text-brand-yellow transition-colors duration-300">About</a>
+                        <a href="services.html" class="dark-nav-link text-brand-red font-bold">Services</a>
+                        <a href="contact.html"
+                            class="px-6 py-2 rounded-full border border-brand-red text-brand-red hover:bg-brand-red hover:text-white transition-all duration-300 font-semibold shadow-[0_0_15px_rgba(255,0,0,0.3)] hover:shadow-[0_0_25px_rgba(255,0,0,0.6)]">Contact
+                            Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="pt-40 pb-20 text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-red/10 to-transparent pointer-events-none"></div>
+        <h1 class="font-display text-5xl md:text-6xl font-bold mb-6 relative z-10" data-aos="fade-down">OUR EXPERTISE
+        </h1>
+        <p class="text-xl text-gray-400 max-w-2xl mx-auto relative z-10" data-aos="fade-up" data-aos-delay="100">
+            Premium digital solutions tailored for your success.
+        </p>
+    </header>
+
+    <!-- Services Grid -->
+    <section class="py-20 bg-brand-gray">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Graphic Design -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/5 hover:border-brand-red/50 transition-all duration-300 group relative overflow-hidden"
+                    data-aos="fade-up">
+                    <div
+                        class="absolute inset-0 bg-brand-red/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fas fa-pencil-ruler text-4xl text-brand-red mb-6"></i>
+                        <h3 class="text-2xl font-bold font-display mb-4">Graphic Design</h3>
+                        <ul class="space-y-3 text-gray-400 mb-8">
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>Logo Design & Branding</li>
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>Social Media Posts</li>
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>Flyers & Posters</li>
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>Business Cards</li>
+                        </ul>
+                        <button
+                            class="text-white border-b border-brand-red hover:text-brand-red transition-colors">Start
+                            Project</button>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/5 hover:border-brand-yellow/50 transition-all duration-300 group relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute inset-0 bg-brand-yellow/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fas fa-laptop-code text-4xl text-brand-yellow mb-6"></i>
+                        <h3 class="text-2xl font-bold font-display mb-4">Web Development</h3>
+                        <ul class="space-y-3 text-gray-400 mb-8">
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>Responsive Websites</li>
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>E-commerce Solutions</li>
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>Landing Pages</li>
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>Portfolio Sites</li>
+                        </ul>
+                        <button
+                            class="text-white border-b border-brand-yellow hover:text-brand-yellow transition-colors">Start
+                            Project</button>
+                    </div>
+                </div>
+
+                <!-- Video Editing -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/5 hover:border-brand-red/50 transition-all duration-300 group relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute inset-0 bg-brand-red/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fas fa-film text-4xl text-brand-red mb-6"></i>
+                        <h3 class="text-2xl font-bold font-display mb-4">Video Editing</h3>
+                        <ul class="space-y-3 text-gray-400 mb-8">
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>Reels & TikToks</li>
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>YouTube Vlogs</li>
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>Promotional Videos</li>
+                            <li><i class="fas fa-check text-brand-yellow mr-2"></i>Cinematic Edits</li>
+                        </ul>
+                        <button
+                            class="text-white border-b border-brand-red hover:text-brand-red transition-colors">Start
+                            Project</button>
+                    </div>
+                </div>
+
+                <!-- Social Media Management -->
+                <div class="bg-brand-dark p-8 rounded-2xl border border-white/5 hover:border-brand-yellow/50 transition-all duration-300 group relative overflow-hidden"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="absolute inset-0 bg-brand-yellow/5 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500">
+                    </div>
+                    <div class="relative z-10">
+                        <i class="fas fa-hashtag text-4xl text-brand-yellow mb-6"></i>
+                        <h3 class="text-2xl font-bold font-display mb-4">Digital Marketing</h3>
+                        <ul class="space-y-3 text-gray-400 mb-8">
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>Social Media Managment</li>
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>Content Strategy</li>
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>Ad Campaigns</li>
+                            <li><i class="fas fa-check text-brand-red mr-2"></i>Brand Awareness</li>
+                        </ul>
+                        <button
+                            class="text-white border-b border-brand-yellow hover:text-brand-yellow transition-colors">Start
+                            Project</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-white/10 text-center">
+        <p class="text-gray-500 font-sans">© 2026 D_Creative Group.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
